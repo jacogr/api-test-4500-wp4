@@ -7,20 +7,20 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   module: {
-		rules: [
-			{
-				test: /\.js$/,
-				loader: require.resolve('@open-wc/webpack-import-meta-loader'),
-			},
-			{
-				test: /\.js$/,
-				use: {
-					loader: 'babel-loader',
-					options: {
-						presets: ['@babel/env']
-					}
-				}
-			}
-		]
-	}
+    rules: [
+      {
+        test: /\.js$/,
+        loader: require.resolve('@open-wc/webpack-import-meta-loader'),
+      },
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/env']
+          }
+        }
+      }
+    ]
+  }
 };
